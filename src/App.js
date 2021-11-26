@@ -43,12 +43,12 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <MainLayout>
-        <AnimatedSwitch
-        atEnter={{ opacity: 1, top: 200 }}
-        atLeave={{ opacity: 0, top: 200 }}
-        atActive={{ opacity: 1, top: 0 }}
-        className={styles.switchWrapper}
-      >
+          <AnimatedSwitch
+            atEnter={{ opacity: 1, top: 200 }}
+            atLeave={{ opacity: 0, top: 200 }}
+            atActive={{ opacity: 1, top: 0 }}
+            className={styles.switchWrapper}
+          >
             <Route exact path='/' component={Home} />
             <Route exact path='/trips' component={Trips} />
             <Route exact path='/trip/:id' component={Trip} />
@@ -58,7 +58,7 @@ class App extends React.Component {
             <Route path='/countries' component={Countries} />
             <Route path='/country/:id' component={Country} />
             <Route path='*' component={NotFound} />
-            </AnimatedSwitch>
+          </AnimatedSwitch>
         </MainLayout>
       </BrowserRouter>
     );

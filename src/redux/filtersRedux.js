@@ -39,8 +39,8 @@ export default function reducer(statePart = [], action = {}) {
         duration: {
           ...statePart.duration, 
           from: action.payload,
-      },
-    };  
+        },
+      };  
     case CHANGE_TO_DURATION:
       return {
         ...statePart,
