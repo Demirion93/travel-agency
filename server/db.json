@@ -73,6 +73,85 @@
       "start-date": "2021-12-03T18:27:54.000Z",
       "totalCost": "$161,642",
       "id": 6
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "pool",
+        "kitchen"
+      ],
+      "adults": "3",
+      "children": 0,
+      "name": "Demirion",
+      "contact": "",
+      "start-date": "2021-12-15T20:24:10.000Z",
+      "totalCost": "$160,742",
+      "tripDetails": {
+        "tripId": "5cc1d10130dfa407e2e54e20",
+        "countryCode": "TUR",
+        "tripName": "Pleasant travel in cool Turkey"
+      },
+      "id": 7
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "pool",
+        "kitchen"
+      ],
+      "adults": "3",
+      "children": 0,
+      "name": "Demirion2",
+      "contact": "546546463",
+      "start-date": "2021-12-15T20:24:10.000Z",
+      "totalCost": "$160,742",
+      "tripDetails": {
+        "tripId": "5cc1d10130dfa407e2e54e20",
+        "countryCode": "TUR",
+        "tripName": "Pleasant travel in cool Turkey"
+      },
+      "id": 8
+    },
+    {
+      "car-rental": "luxury",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive",
+        "security"
+      ],
+      "adults": "3",
+      "children": "1",
+      "name": "Demirion3",
+      "contact": "546546463",
+      "start-date": "2021-12-22T20:24:10.000Z",
+      "totalCost": "$190,333",
+      "tripDetails": {
+        "tripId": "5cc1d10130dfa407e2e54e20",
+        "countryCode": "TUR",
+        "tripName": "Pleasant travel in cool Turkey"
+      },
+      "id": 9
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive",
+        "security",
+        "pool"
+      ],
+      "adults": "3",
+      "children": "3",
+      "name": "Demirion4",
+      "contact": "546546463",
+      "start-date": "2021-12-22T20:24:10.000Z",
+      "totalCost": "$248,313",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "countryCode": "TUR",
+      "tripName": "Pleasant travel in cool Turkey",
+      "id": 10
     }
   ]
 }
