@@ -123,7 +123,7 @@ for(let type in optionTypes){
       case 'icons': {
         /* tests for icons */
         it('contains divs with icons', () => {
-          const icon = renderedSubcomponent.find('.icon');
+          const icon = renderedSubcomponent.find('Icon');
           expect(icon.length).toBe(mockProps.values.length);
           expect(icon.at(0).find('Icon').prop('name')).toBe(mockProps.values[0].icon);
           expect(icon.at(1).find('Icon').prop('name')).toBe(mockProps.values[1].icon);
