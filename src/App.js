@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 import {AnimatedSwitch} from 'react-router-transition';
 import PropTypes from 'prop-types';
 import styles from './App.module.scss';
@@ -41,7 +41,7 @@ class App extends React.Component {
 
   render(){
     return (
-      <BrowserRouter>
+      <HashRouter>
         <MainLayout>
           <AnimatedSwitch
             atEnter={{ opacity: 1, top: 200 }}
@@ -49,7 +49,7 @@ class App extends React.Component {
             atActive={{ opacity: 1, top: 0 }}
             className={styles.switchWrapper}
           >
-            <Route exact path='/' component={Home} />
+            <Route exact path={`/`} render={ (routerProps) => < Home routerProps={routerProps} setUpGame={this.setUpGame} />} />
             <Route exact path='/trips' component={Trips} />
             <Route exact path='/trip/:id' component={Trip} />
             <Route exact path='/regions' component={Regions} />
@@ -60,7 +60,7 @@ class App extends React.Component {
             <Route path='*' component={NotFound} />
           </AnimatedSwitch>
         </MainLayout>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

@@ -1,4 +1,4 @@
-https://wieru.github.io/travel-agency
+https://wieru.github.io/travel-agency/
 
 # Getting Started with Create React App
 

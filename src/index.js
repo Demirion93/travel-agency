@@ -4,10 +4,13 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import store from './redux/store';
 import App from './App';
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Router basename={process.env.PUBLIC_URL}>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Router>,
   document.querySelector('#app')
 );
